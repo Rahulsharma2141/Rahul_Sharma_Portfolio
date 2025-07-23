@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Profile Card</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .card {
+    background: white;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 30px 25px;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4a90e2;
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin: 15px 0 8px;
+    font-weight: 700;
+    color: #333;
+  }
+  p.title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a90e2;
+    margin: 0 0 20px;
+    letter-spacing: 1px;
+  }
+  p.description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  .social-icons a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 1.3rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: #1c3f94;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="Rahul img 1.jpg" alt="Profile Photo" class="profile-img" />
+  <h2>Rahul Sharma</h2>
+  <p class="title">Front-End Developer</p>
+  <p class="description">
+    Passionate developer who loves building beautiful and user-friendly websites. Skilled in HTML, CSS, Bootstrap and JavaScript.
+  </p>
+  <div class="social-icons">
+    <a href="https://github.com/Rahulsharma2141" aria-label="GitHub"><i class="fa-brands fa-github"></i>🐙</a>
+    <a href="https://www.linkedin.com/in/rahulsharma2141" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i>🔗</a>
+    <a href="https://www.instagram.com/sharma_rahul_2141?utm_source=qr&igsh=MTU2NzQ0NWtod2Q4eQ==" aria-label="Instagram"><i class="bi bi-instagram"></i>👨‍💼</a>
+  </div>
+</div>
+
+<!-- FontAwesome CDN -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
